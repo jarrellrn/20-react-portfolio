@@ -20,9 +20,7 @@ function Nav() {
             <Link to="/portfolio">Portfolio</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="contact.html">
-              Contact
-            </a>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </nav>
