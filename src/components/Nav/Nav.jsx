@@ -5,23 +5,19 @@ import { Link } from "react-router-dom";
 
 function Nav() {
   return (
-    <div className="navBody">
+    <div className="navBody" style={{ display: "flex", flexDirection: "row" }}>
       <div id="topSpace"></div>
       <h1>
         Robert Jarrell <div id="portfoliotext"> Portfolio</div>
       </h1>
 
       <nav className="navbar navbar-expand-sm justify-content-center">
-        <ul className="navbar-nav">
+        <ul className="navbar-nav" style={{ display: "flex", flex: 1 }}>
           <li className="nav-item">
-            <a className="nav-link" href="index.html">
-              About Me
-            </a>
+            <Link to="/">About Me</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="portfolio.html">
-              Portfolio
-            </a>
+            <Link to="/portfolio">Portfolio</Link>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="contact.html">
