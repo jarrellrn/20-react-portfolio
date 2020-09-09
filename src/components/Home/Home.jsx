@@ -2,10 +2,12 @@ import React from "react";
 // import "../style.css";
 // import Nav from "../Nav";
 import { Link } from "react-router-dom";
+import Nav from "../Nav/Nav";
 
 function Home() {
   return (
     <div className="homeBody">
+      <Nav />
       <h2>About Me</h2>
       <div id="space1"></div>
       <div id="container1">
