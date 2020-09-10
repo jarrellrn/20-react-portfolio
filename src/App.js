@@ -19,18 +19,6 @@ function App() {
       <Route path="/contact" exact>
         <Contact />
       </Route>
-      {/* <Route path="/Gallery" exact>
-        <Gallery />
-      </Route>
-      <Route path="/Web" exact>
-        <Web />
-      </Route>
-      <Route path="/Content" exact>
-        <Content />
-      </Route>
-      <Route path="/Contact" exact>
-        <Contact />
-      </Route> */}
     </Router>
   );
 }
