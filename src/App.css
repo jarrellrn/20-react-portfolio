@@ -84,7 +84,7 @@ a:active {
   display: flex;
   /* opacity: 20%; */
   margin-left: 20px;
-  color: rgb(197, 197, 197);
+  opacity: 0.2;
 }
 
 #portdiv1 {
