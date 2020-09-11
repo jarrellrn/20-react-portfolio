@@ -87,8 +87,17 @@ a:active {
 }
 
 #portdiv1 {
+  display: flex;
+  /* border: black 1px solid; */
   width: 20%;
 }
+
+.portdiv2 {
+  display: flex;
+  width: 80%;
+  /* border: black 1px solid; */
+}
+
 #platformerDiv,
 #coffeeRunDiv,
 #homework2Div,
@@ -118,4 +127,10 @@ a:active {
 .mainText {
   font-size: 20px;
   opacity: 60%;
+}
+
+.portfolioText {
+  justify-content: center;
+  align-content: center;
+  text-align: center;
 }

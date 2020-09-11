@@ -9,7 +9,7 @@ function Portfolio() {
     <div className="portfolioBody">
       <Nav />
       <h2>Portfolio</h2>
-      <div>
+      <div className="portfolioText">
         <p>
           A few of the projects I've worked on. Click a link on the left to
           learn more.
@@ -66,6 +66,7 @@ function Portfolio() {
             </li>
           </ul>
         </div>
+        <div className="portdiv2"></div>
       </div>
     </div>
   );
