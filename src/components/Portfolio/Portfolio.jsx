@@ -1,20 +1,8 @@
 import React from "react";
-// import "../style.css";
-// import Nav from "../Nav";
 import { Link } from "react-router-dom";
 import Nav from "../Nav/Nav";
 
 function Portfolio() {
-  // function templateFunc(event) {
-  //   event.preventDefault();
-  //   document.getElementById("coffeeRunDiv").className = "hidden";
-  //   document.getElementById("platformerDiv").className = "hidden";
-  //   document.getElementById("readmeDiv").className = "hidden";
-  //   document.getElementById("employeeDiv").className = "hidden";
-  //   document.getElementById("fitnessDiv").className = "hidden";
-  //   document.getElementById("falcoDiv").className = "hidden";
-  // }
-
   function coffeeRunFunc(event) {
     event.preventDefault();
     document.getElementById("coffeeRunDiv").className = "unhidden";
@@ -22,7 +10,6 @@ function Portfolio() {
     document.getElementById("readmeDiv").className = "hidden";
     document.getElementById("employeeDiv").className = "hidden";
     document.getElementById("fitnessDiv").className = "hidden";
-    // document.getElementById("falcoDiv").className = "hidden";
   }
 
   function platformingFunc(event) {
@@ -32,7 +19,6 @@ function Portfolio() {
     document.getElementById("readmeDiv").className = "hidden";
     document.getElementById("employeeDiv").className = "hidden";
     document.getElementById("fitnessDiv").className = "hidden";
-    // document.getElementById("falcoDiv").className = "hidden";
   }
 
   function readmeFunc(event) {
@@ -42,7 +28,6 @@ function Portfolio() {
     document.getElementById("readmeDiv").className = "unhidden";
     document.getElementById("employeeDiv").className = "hidden";
     document.getElementById("fitnessDiv").className = "hidden";
-    // document.getElementById("falcoDiv").className = "hidden";
   }
 
   function employeeFunc(event) {
@@ -52,7 +37,6 @@ function Portfolio() {
     document.getElementById("readmeDiv").className = "hidden";
     document.getElementById("employeeDiv").className = "unhidden";
     document.getElementById("fitnessDiv").className = "hidden";
-    // document.getElementById("falcoDiv").className = "hidden";
   }
 
   function fitnessFunc(event) {
@@ -62,7 +46,6 @@ function Portfolio() {
     document.getElementById("readmeDiv").className = "hidden";
     document.getElementById("employeeDiv").className = "hidden";
     document.getElementById("fitnessDiv").className = "unhidden";
-    // document.getElementById("falcoDiv").className = "hidden";
   }
 
   return (
@@ -115,13 +98,6 @@ function Portfolio() {
               </Link>
             </li>
             <br />
-            {/* <li>
-              <Link>
-                Falco
-                <br />
-                Practice
-              </Link>
-            </li> */}
           </ul>
         </div>
         <div className="portdiv2">
@@ -235,27 +211,6 @@ function Portfolio() {
               height="400px"
             />
           </div>
-
-          {/* <div id="falcoDiv" className="unhidden">
-            <p>
-              This is a simple website I created in order to help me with my
-              practice routine of a mechanical fighting game I like to play.
-              <br />
-              <br />
-              <a href="https://github.com/jarrellrn/17-workout-tracker">
-                GitHub Link
-              </a>
-              <br />
-              <a href="https://work-out-tracker-17.herokuapp.com//">
-                Deployed Link
-              </a>
-            </p>
-            <img
-              src="./assets/falcopractice.png"
-              alt="screencap of falco practice"
-              height="400px"
-            />
-          </div> */}
         </div>
       </div>
     </div>

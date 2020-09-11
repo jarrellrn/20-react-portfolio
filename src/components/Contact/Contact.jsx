@@ -1,7 +1,4 @@
 import React from "react";
-// import "../style.css";
-// import Nav from "../Nav";
-import { Link } from "react-router-dom";
 import Nav from "../Nav/Nav";
 
 function Contact() {

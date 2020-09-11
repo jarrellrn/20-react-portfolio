@@ -125,9 +125,9 @@ a:active {
   padding-bottom: 10px;
 }
 
-/* .mainText {
-  opacity: 80%;
-} */
+.mainText {
+  opacity: 0.8;
+}
 
 .portfolioText {
   justify-content: center;
