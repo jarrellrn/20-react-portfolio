@@ -5,23 +5,23 @@ import { Link } from "react-router-dom";
 import Nav from "../Nav/Nav";
 
 function Portfolio() {
-  function templateFunc(event) {
-    event.preventDefault();
-    document.getElementById("coffeeRunDiv").className = "hidden";
-    document.getElementById("platformerDiv").className = "hidden";
-    document.getElementById("readmeDiv").className = "hidden";
-    document.getElementById("teamDiv").className = "hidden";
-    document.getElementById("burgerDiv").className = "hidden";
-    document.getElementById("falcoDiv").className = "hidden";
-  }
+  // function templateFunc(event) {
+  //   event.preventDefault();
+  //   document.getElementById("coffeeRunDiv").className = "hidden";
+  //   document.getElementById("platformerDiv").className = "hidden";
+  //   document.getElementById("readmeDiv").className = "hidden";
+  //   document.getElementById("employeeDiv").className = "hidden";
+  //   document.getElementById("fitnessDiv").className = "hidden";
+  //   document.getElementById("falcoDiv").className = "hidden";
+  // }
 
   function coffeeRunFunc(event) {
     event.preventDefault();
     document.getElementById("coffeeRunDiv").className = "unhidden";
     document.getElementById("platformerDiv").className = "hidden";
     document.getElementById("readmeDiv").className = "hidden";
-    // document.getElementById("teamDiv").className = "hidden";
-    // document.getElementById("burgerDiv").className = "hidden";
+    document.getElementById("employeeDiv").className = "hidden";
+    document.getElementById("fitnessDiv").className = "hidden";
     // document.getElementById("falcoDiv").className = "hidden";
   }
 
@@ -30,8 +30,8 @@ function Portfolio() {
     document.getElementById("coffeeRunDiv").className = "hidden";
     document.getElementById("platformerDiv").className = "unhidden";
     document.getElementById("readmeDiv").className = "hidden";
-    // document.getElementById("teamDiv").className = "hidden";
-    // document.getElementById("burgerDiv").className = "hidden";
+    document.getElementById("employeeDiv").className = "hidden";
+    document.getElementById("fitnessDiv").className = "hidden";
     // document.getElementById("falcoDiv").className = "hidden";
   }
 
@@ -40,8 +40,28 @@ function Portfolio() {
     document.getElementById("coffeeRunDiv").className = "hidden";
     document.getElementById("platformerDiv").className = "hidden";
     document.getElementById("readmeDiv").className = "unhidden";
-    // document.getElementById("teamDiv").className = "hidden";
-    // document.getElementById("burgerDiv").className = "hidden";
+    document.getElementById("employeeDiv").className = "hidden";
+    document.getElementById("fitnessDiv").className = "hidden";
+    // document.getElementById("falcoDiv").className = "hidden";
+  }
+
+  function employeeFunc(event) {
+    event.preventDefault();
+    document.getElementById("coffeeRunDiv").className = "hidden";
+    document.getElementById("platformerDiv").className = "hidden";
+    document.getElementById("readmeDiv").className = "hidden";
+    document.getElementById("employeeDiv").className = "unhidden";
+    document.getElementById("fitnessDiv").className = "hidden";
+    // document.getElementById("falcoDiv").className = "hidden";
+  }
+
+  function fitnessFunc(event) {
+    event.preventDefault();
+    document.getElementById("coffeeRunDiv").className = "hidden";
+    document.getElementById("platformerDiv").className = "hidden";
+    document.getElementById("readmeDiv").className = "hidden";
+    document.getElementById("employeeDiv").className = "hidden";
+    document.getElementById("fitnessDiv").className = "unhidden";
     // document.getElementById("falcoDiv").className = "hidden";
   }
 
@@ -80,28 +100,28 @@ function Portfolio() {
             </li>
             <br />
             <li>
-              <Link>
-                Team
+              <Link onClick={employeeFunc}>
+                Employee
+                <br />
+                Directory
+              </Link>
+            </li>
+            <br />
+            <li>
+              <Link onClick={fitnessFunc}>
+                Fitness
                 <br />
                 Tracker
               </Link>
             </li>
             <br />
-            <li>
-              <Link>
-                Eat the
-                <br />
-                Burger
-              </Link>
-            </li>
-            <br />
-            <li>
+            {/* <li>
               <Link>
                 Falco
                 <br />
                 Practice
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
         <div className="portdiv2">
@@ -170,6 +190,72 @@ function Portfolio() {
               height="400px"
             />
           </div>
+
+          <div id="employeeDiv" className="hidden">
+            <p>
+              This is a dynamically generated "employee tracker" that basically
+              serves as a directory of randomly generated employees using the
+              Random User API.
+              <br />
+              <br />
+              <a href="https://github.com/jarrellrn/19-Employee-Directory">
+                GitHub Link
+              </a>
+              <br />
+              <a href="https://evening-savannah-14006.herokuapp.com/">
+                Deployed Link
+              </a>
+            </p>
+            <img
+              src="./assets/employee.png"
+              alt="screencap of employee directory"
+              height="400px"
+            />
+          </div>
+
+          <div id="fitnessDiv" className="hidden">
+            <p>
+              This is an application that can be used to essentially track your
+              workouts. It includes various information that you can input such
+              as the type of workout, the intensity or time, etc. It's used to
+              give you an overview of your workout schedule over time.
+              <br />
+              <br />
+              <a href="https://github.com/jarrellrn/17-workout-tracker">
+                GitHub Link
+              </a>
+              <br />
+              <a href="https://work-out-tracker-17.herokuapp.com//">
+                Deployed Link
+              </a>
+            </p>
+            <img
+              src="./assets/fitness.png"
+              alt="screencap of workout tracker"
+              height="400px"
+            />
+          </div>
+
+          {/* <div id="falcoDiv" className="unhidden">
+            <p>
+              This is a simple website I created in order to help me with my
+              practice routine of a mechanical fighting game I like to play.
+              <br />
+              <br />
+              <a href="https://github.com/jarrellrn/17-workout-tracker">
+                GitHub Link
+              </a>
+              <br />
+              <a href="https://work-out-tracker-17.herokuapp.com//">
+                Deployed Link
+              </a>
+            </p>
+            <img
+              src="./assets/falcopractice.png"
+              alt="screencap of falco practice"
+              height="400px"
+            />
+          </div> */}
         </div>
       </div>
     </div>
