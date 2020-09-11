@@ -1,0 +1,104 @@
+* {
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+html {
+  background-color: #fafaff;
+}
+#backgroundDiv {
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 10%;
+  pointer-events: none;
+}
+
+#container1 {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  margin: auto;
+}
+#container12 {
+  padding-top: 40px;
+  display: flex;
+  width: 50%;
+  margin: auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+#container2 {
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  margin: auto;
+}
+
+#topSpace {
+  display: flex;
+  height: 20px;
+}
+
+.navbar {
+  background-color: #fafaff;
+}
+
+h1 {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  color: #4e2c46;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  color: #4e2c46;
+}
+
+#space1 {
+  height: 10px;
+}
+
+a:link,
+a:visited {
+  color: black;
+}
+
+a:hover,
+a:active {
+  color: #82d173;
+}
+
+#portfoliotext {
+  display: flex;
+  opacity: 20%;
+  margin-left: 20px;
+}
+
+#portdiv1 {
+  width: 20%;
+}
+#platformerDiv,
+#coffeeRunDiv,
+#homework2Div,
+#emptyDiv {
+  width: 80%;
+}
+
+#emptyDiv {
+  height: 0px;
+}
+
+.hidden {
+  display: none;
+}
