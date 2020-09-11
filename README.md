@@ -15,6 +15,8 @@ This project is just my portfolio updated to run on and be generated with React.
 
 https://infinite-plateau-38758.herokuapp.com/
 
+![alt text](https://i.imgur.com/KSjJjFw.png)
+
 ### License: <a name="license"></a>
 
 This application is covered under the "GPL" license.
