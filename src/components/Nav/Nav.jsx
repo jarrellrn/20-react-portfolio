@@ -5,25 +5,32 @@ import { Link } from "react-router-dom";
 
 function Nav() {
   return (
-    <div className="navBody" style={{ display: "flex", flexDirection: "row" }}>
+    <div className="navBody">
       <div id="topSpace"></div>
       <h1>
         Robert Jarrell <div id="portfoliotext"> Portfolio</div>
       </h1>
-
-      <nav className="navbar navbar-expand-sm justify-content-center">
-        <ul className="navbar-nav" style={{ display: "flex", flex: 1 }}>
-          <li className="nav-item">
-            <Link to="/">About Me</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/portfolio">Portfolio</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/contact">Contact</Link>
-          </li>
-        </ul>
-      </nav>
+      <div className="navbarDiv">
+        <nav>
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <Link to="/" style={{ textDecoration: "none" }}>
+                About Me
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/portfolio" style={{ textDecoration: "none" }}>
+                Portfolio
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/contact" style={{ textDecoration: "none" }}>
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   );
 }
