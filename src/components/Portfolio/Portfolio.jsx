@@ -19,7 +19,7 @@ function Portfolio() {
     event.preventDefault();
     document.getElementById("coffeeRunDiv").className = "unhidden";
     document.getElementById("platformerDiv").className = "hidden";
-    // document.getElementById("readmeDiv").className = "hidden";
+    document.getElementById("readmeDiv").className = "hidden";
     // document.getElementById("teamDiv").className = "hidden";
     // document.getElementById("burgerDiv").className = "hidden";
     // document.getElementById("falcoDiv").className = "hidden";
@@ -29,7 +29,17 @@ function Portfolio() {
     event.preventDefault();
     document.getElementById("coffeeRunDiv").className = "hidden";
     document.getElementById("platformerDiv").className = "unhidden";
-    // document.getElementById("readmeDiv").className = "hidden";
+    document.getElementById("readmeDiv").className = "hidden";
+    // document.getElementById("teamDiv").className = "hidden";
+    // document.getElementById("burgerDiv").className = "hidden";
+    // document.getElementById("falcoDiv").className = "hidden";
+  }
+
+  function readmeFunc(event) {
+    event.preventDefault();
+    document.getElementById("coffeeRunDiv").className = "hidden";
+    document.getElementById("platformerDiv").className = "hidden";
+    document.getElementById("readmeDiv").className = "unhidden";
     // document.getElementById("teamDiv").className = "hidden";
     // document.getElementById("burgerDiv").className = "hidden";
     // document.getElementById("falcoDiv").className = "hidden";
@@ -62,7 +72,7 @@ function Portfolio() {
             </li>
             <br />
             <li>
-              <Link>
+              <Link onClick={readmeFunc}>
                 ReadMe
                 <br />
                 Generator
