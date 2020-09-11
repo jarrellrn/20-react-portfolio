@@ -82,8 +82,9 @@ a:active {
 
 #portfoliotext {
   display: flex;
-  opacity: 20%;
+  /* opacity: 20%; */
   margin-left: 20px;
+  color: rgb(197, 197, 197);
 }
 
 #portdiv1 {
@@ -124,9 +125,9 @@ a:active {
   padding-bottom: 10px;
 }
 
-.mainText {
+/* .mainText {
   opacity: 80%;
-}
+} */
 
 .portfolioText {
   justify-content: center;
