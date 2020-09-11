@@ -5,6 +5,36 @@ import { Link } from "react-router-dom";
 import Nav from "../Nav/Nav";
 
 function Portfolio() {
+  function templateFunc(event) {
+    event.preventDefault();
+    document.getElementById("coffeeRunDiv").className = "hidden";
+    document.getElementById("platformerDiv").className = "hidden";
+    document.getElementById("readmeDiv").className = "hidden";
+    document.getElementById("teamDiv").className = "hidden";
+    document.getElementById("burgerDiv").className = "hidden";
+    document.getElementById("falcoDiv").className = "hidden";
+  }
+
+  function coffeeRunFunc(event) {
+    event.preventDefault();
+    document.getElementById("coffeeRunDiv").className = "unhidden";
+    document.getElementById("platformerDiv").className = "hidden";
+    // document.getElementById("readmeDiv").className = "hidden";
+    // document.getElementById("teamDiv").className = "hidden";
+    // document.getElementById("burgerDiv").className = "hidden";
+    // document.getElementById("falcoDiv").className = "hidden";
+  }
+
+  function platformingFunc(event) {
+    event.preventDefault();
+    document.getElementById("coffeeRunDiv").className = "hidden";
+    document.getElementById("platformerDiv").className = "unhidden";
+    // document.getElementById("readmeDiv").className = "hidden";
+    // document.getElementById("teamDiv").className = "hidden";
+    // document.getElementById("burgerDiv").className = "hidden";
+    // document.getElementById("falcoDiv").className = "hidden";
+  }
+
   return (
     <div className="portfolioBody">
       <Nav />
@@ -20,49 +50,47 @@ function Portfolio() {
         <div id="portdiv1">
           <ul>
             <li>
-              <a href="javascript:;" id="coffeeRun">
-                Coffee Run
-              </a>
+              <Link onClick={coffeeRunFunc}>Coffee Run</Link>
             </li>
             <br />
             <li>
-              <a href="javascript:;" id="platformer">
+              <Link onClick={platformingFunc}>
                 Platforming
                 <br />
                 to Success
-              </a>
+              </Link>
             </li>
             <br />
             <li>
-              <a href="javascript:;" id="homework2">
+              <Link>
                 ReadMe
                 <br />
                 Generator
-              </a>
+              </Link>
             </li>
             <br />
             <li>
-              <a href="javascript:;" id="teamTrack">
+              <Link>
                 Team
                 <br />
                 Tracker
-              </a>
+              </Link>
             </li>
             <br />
             <li>
-              <a href="javascript:;" id="borger">
+              <Link>
                 Eat the
                 <br />
                 Burger
-              </a>
+              </Link>
             </li>
             <br />
             <li>
-              <a href="javascript:;" id="falco">
+              <Link>
                 Falco
                 <br />
                 Practice
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -87,7 +115,7 @@ function Portfolio() {
               </a>
             </p>
             <img
-              src="assets/coffeerun.png"
+              src="./assets/coffeerun.png"
               alt="screencap of Coffee Run"
               height="400px"
             />
@@ -110,13 +138,13 @@ function Portfolio() {
               </a>
             </p>
             <img
-              src="assets/platforming.png"
+              src="./assets/platforming.png"
               alt="screencap of Platforming to Success login page"
               height="400px"
             />
           </div>
 
-          <div id="homework2Div" className="hidden">
+          <div id="readmeDiv" className="hidden">
             <p>
               This is a node CLI application that is useful for generating
               readme's. It mainly uses inquirer and fs to write the end file.
@@ -127,7 +155,7 @@ function Portfolio() {
               </a>
             </p>
             <img
-              src="assets/readme.png"
+              src="./assets/readme.png"
               alt="screencap of readme generator"
               height="400px"
             />
